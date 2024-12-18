@@ -1,0 +1,105 @@
+{
+  "quizTitle": "Periodic Table Quiz - Elements 1 to 20",
+  "questions": [
+    {
+      "question": "What is the symbol for Hydrogen?",
+      "options": ["H", "He", "Hy", "Ho"],
+      "answer": "H"
+    },
+    {
+      "question": "Which element has the atomic number 1?",
+      "options": ["Helium", "Oxygen", "Hydrogen", "Nitrogen"],
+      "answer": "Hydrogen"
+    },
+    {
+      "question": "What is the symbol for Helium?",
+      "options": ["H", "He", "Hi", "Hl"],
+      "answer": "He"
+    },
+    {
+      "question": "Which element has the atomic number 2?",
+      "options": ["Oxygen", "Helium", "Nitrogen", "Carbon"],
+      "answer": "Helium"
+    },
+    {
+      "question": "What is the symbol for Lithium?",
+      "options": ["Li", "L", "Lt", "Li2"],
+      "answer": "Li"
+    },
+    {
+      "question": "Which element has the atomic number 3?",
+      "options": ["Boron", "Lithium", "Carbon", "Nitrogen"],
+      "answer": "Lithium"
+    },
+    {
+      "question": "What is the symbol for Beryllium?",
+      "options": ["Be", "B", "Ba", "Bo"],
+      "answer": "Be"
+    },
+    {
+      "question": "Which element has the atomic number 4?",
+      "options": ["Boron", "Beryllium", "Lithium", "Sodium"],
+      "answer": "Beryllium"
+    },
+    {
+      "question": "What is the symbol for Boron?",
+      "options": ["B", "Bo", "Br", "Ba"],
+      "answer": "B"
+    },
+    {
+      "question": "Which element has the atomic number 5?",
+      "options": ["Boron", "Carbon", "Nitrogen", "Oxygen"],
+      "answer": "Boron"
+    },
+    {
+      "question": "What is the symbol for Carbon?",
+      "options": ["C", "Ca", "Cr", "Co"],
+      "answer": "C"
+    },
+    {
+      "question": "Which element has the atomic number 6?",
+      "options": ["Oxygen", "Carbon", "Nitrogen", "Boron"],
+      "answer": "Carbon"
+    },
+    {
+      "question": "What is the symbol for Nitrogen?",
+      "options": ["N", "Ni", "No", "Ne"],
+      "answer": "N"
+    },
+    {
+      "question": "Which element has the atomic number 7?",
+      "options": ["Oxygen", "Hydrogen", "Nitrogen", "Carbon"],
+      "answer": "Nitrogen"
+    },
+    {
+      "question": "What is the symbol for Oxygen?",
+      "options": ["O", "Ox", "Oy", "Om"],
+      "answer": "O"
+    },
+    {
+      "question": "Which element has the atomic number 8?",
+      "options": ["Oxygen", "Fluorine", "Neon", "Nitrogen"],
+      "answer": "Oxygen"
+    },
+    {
+      "question": "What is the symbol for Fluorine?",
+      "options": ["F", "Fl", "Fe", "Fn"],
+      "answer": "F"
+    },
+    {
+      "question": "Which element has the atomic number 9?",
+      "options": ["Oxygen", "Fluorine", "Neon", "Sodium"],
+      "answer": "Fluorine"
+    },
+    {
+      "question": "What is the symbol for Neon?",
+      "options": ["Ne", "N", "No", "Neon"],
+      "answer": "Ne"
+    },
+    {
+      "question": "Which element has the atomic number 10?",
+      "options": ["Neon", "Argon", "Helium", "Krypton"],
+      "answer": "Neon"
+    }
+  ]
+}
