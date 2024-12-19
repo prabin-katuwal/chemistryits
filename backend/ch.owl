@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.example.org/periodic_table.owl"
+         xmlns="http://www.example.org/periodic_table.owl#">
+
+<owl:Ontology rdf:about="http://www.example.org/periodic_table.owl"/>
+
+<owl:ObjectProperty rdf:about="#isInSameGroupAs">
+  <rdfs:domain rdf:resource="#Element"/>
+  <rdfs:range rdf:resource="#Element"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is in the same group as</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#formsChemicalBondWith">
+  <rdfs:range rdf:resource="#Element"/>
+  <rdfs:domain rdf:resource="#ChemicalBond"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forms Chemical Bond With</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#atomicNumber">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <rdfs:domain rdf:resource="#Element"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#symbol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdfs:domain rdf:resource="#Element"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#atomicMass">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <rdfs:domain rdf:resource="#Element"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#group">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <rdfs:domain rdf:resource="#Element"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#period">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <rdfs:domain rdf:resource="#Element"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#col">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <rdfs:domain rdf:resource="#Element"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Element">
+  <rdfs:subClassOf rdf:resource="http://www.example.org/periodic_table.owl#Element"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ChemicalBond">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+
+ <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#atomicMass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#atomicMass">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/periodic_table.owl#Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#atomicNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#atomicNumber">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/periodic_table.owl#Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#col -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#col">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/periodic_table.owl#Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#group">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/periodic_table.owl#Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#period">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/periodic_table.owl#Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#symbol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prabinkatuwal_ysj/ontologies/2024/11/untitled-ontology-2#symbol">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/periodic_table.owl#Element"/>
+    </owl:Class>
+</rdf:RDF>
+<owl:NamedIndividual rdf:about="#Hydrogen">
+  <rdf:type rdf:resource="#Element"/>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</atomicNumber>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</group>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</col>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.008</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Helium">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</period>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0026</atomicMass>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</col>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</group>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lithium">
+  <rdf:type rdf:resource="#Element"/>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</group>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</col>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</period>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.94</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Beryllium">
+  <rdf:type rdf:resource="#Element"/>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</group>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0122</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Be</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Boron">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.81</atomicMass>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</group>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Carbon">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.011</atomicMass>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</group>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Nitrogen">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.007</atomicMass>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</group>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Oxygen">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.999</atomicMass>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</group>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fluorine">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</atomicNumber>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</group>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.998</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Neon">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</atomicNumber>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</group>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.18</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sodium">
+  <rdf:type rdf:resource="#Element"/>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</group>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</col>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</period>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22.99</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Na</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Magnesium">
+  <rdf:type rdf:resource="#Element"/>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</group>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</col>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</period>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24.305</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mg</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aluminum">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</atomicNumber>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</group>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26.982</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Al</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Silicon">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</atomicNumber>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</group>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.085</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Si</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Phosphorus">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</atomicNumber>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</group>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.974</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sulfur">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</atomicNumber>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</group>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32.06</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chlorine">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</atomicNumber>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</group>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.45</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cl</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Argon">
+  <rdf:type rdf:resource="#Element"/>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</period>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</col>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</atomicNumber>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</group>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39.95</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ar</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Potassium">
+  <rdf:type rdf:resource="#Element"/>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</group>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</col>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</period>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39.098</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Calcium">
+  <rdf:type rdf:resource="#Element"/>
+  <group rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</group>
+  <col rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</col>
+  <period rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</period>
+  <atomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</atomicNumber>
+  <atomicMass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.078</atomicMass>
+  <symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ca</symbol>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bond_Hydrogen_Oxygen">
+  <rdf:type rdf:resource="#ChemicalBond"/>
+  <formsChemicalBondWith rdf:resource="#Hydrogen"/>
+  <formsChemicalBondWith rdf:resource="#Oxygen"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
